@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import './form.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFeather } from '@fortawesome/free-solid-svg-icons'
+import { faShirt } from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 function WeightedSumForm() {
     const [material, setMaterial] = useState(1);
@@ -47,12 +54,15 @@ function WeightedSumForm() {
             <div className="container">
                 <form onSubmit={handleSubmit}>
 
-                    <h3>Rate the Importance</h3>
-                    <p>1 least important and 5 most important</p>
+                    <h3>Select your preferences</h3>
 
-                    <div>
-                        <label htmlFor="material">Material</label>
-                        <br />
+                    <p>Adjust the slider to meet your preferred setting for your blank!</p>
+
+                    <div className='slide'>
+                        <label htmlFor="material">Fit</label>
+                        <br/>
+                    
+                        <FontAwesomeIcon icon={faShirt} />
                         <input
                             type="range"
                             id="material"
@@ -64,11 +74,16 @@ function WeightedSumForm() {
 
                         />
                         <span >{material}</span>
+                        <FontAwesomeIcon icon={faShirt} className='' />
+                
+
                     </div>
 
-                    <div>
-                        <label htmlFor="design">Design</label>
-                        <br />
+                    <div className='slide'>
+                        <label htmlFor="design">Weight</label>
+                        <br/>
+                         <FontAwesomeIcon icon={faFeather} />
+                        
                         <input
                             type="range"
                             id="design"
@@ -80,11 +95,15 @@ function WeightedSumForm() {
 
                         />
                         <span >{design}</span>
+                         <FontAwesomeIcon icon={faFeather}  className=''/>
 
                     </div>
-                    <div>
+                    <div className='slide'>
                         <label htmlFor="price">Price</label>
-                        <br />
+                        <br/>
+
+                        <FontAwesomeIcon icon={faDollarSign} />
+
                         <input
                             type="range"
                             id="price"
@@ -96,6 +115,10 @@ function WeightedSumForm() {
 
                         />
                         <span >{price}</span>
+                        <FontAwesomeIcon icon={faDollarSign} />
+         
+
+
                     </div>
                     <br />
                     <input type="submit" value="Submit" />

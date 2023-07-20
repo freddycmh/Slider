@@ -4,14 +4,15 @@ ol {
 }
 
 .container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 auto;
     width: fit-content;
     padding: 10px;
     text-align: center;
-    height: 275px;
+   height: fit-content;
     margin-top: 20vh;
-    border-radius: 15%;
+    border-radius: 20%;
+    background-color: #E8E8E8;
 }
 
 .output {
@@ -33,7 +34,7 @@ input[type=submit] {
 }
 
 .container {
-    box-shadow: 20px 20px rgba(0, 0, 0, .15);
+    /* box-shadow: 20px 20px rgba(0, 0, 0, .15); */
     transition: all .4s ease;
 
 }
@@ -51,3 +52,55 @@ p {
 body {
     font-family: 'Playfair Display', serif;
 }
+
+/* .slide {
+    margin-top: 25px;
+
+}
+
+.slide label {
+    margin-right: 20px;
+} */
+
+.material {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.material::-webkit-slider-runnable-track {
+    height: 15px;
+    background: #ccc;
+    border-radius: 16px;
+}
+
+.material::-moz-range-track {
+    height: 15px;
+    background: #ccc;
+    border-radius: 16px;
+}
+
+.material::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #f50;
+    box-shadow: -407px 0 0 400px #f50;
+}
+
+.material::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #f50;
+    box-shadow: -407px 0 0 400px #f50;
+}
+
