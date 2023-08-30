@@ -150,3 +150,7 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.big-icon {
+  font-size: 22px;
+}

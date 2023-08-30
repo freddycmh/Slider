@@ -161,7 +161,7 @@ function WeightedSumForm() {
               onChange={(e) => setMaterial(parseInt(e.target.value))}
             />
             {/* <span>{material}</span> */}
-            <FontAwesomeIcon icon={faShirt} className="" />
+            <FontAwesomeIcon icon={faShirt} className="big-icon" />
           </div>
           <div className="slide">
             {" "}
